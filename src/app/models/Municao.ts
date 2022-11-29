@@ -5,9 +5,8 @@ import { Calibre } from './Calibre';
 export default class Municao extends Artefato{
  @Column()
  explosiva: boolean;
- @Column({
-type: "enum",
-enum: Calibre,
- })
- calibre: Calibre;
-}
+ @Column({type: "enum",
+ enum: Calibre,
+  })
+  calibre: Calibre;
+ }

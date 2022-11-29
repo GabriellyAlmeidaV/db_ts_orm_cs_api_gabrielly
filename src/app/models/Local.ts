@@ -1,16 +1,21 @@
 import {Entity, Column, PrimaryGeneratedColumn} from 'typeorm';
+
 @Entity('tb_local')
-class Local {
-    @PrimaryGeneratedColumn()//geracao automatica de chave primaria
+class Local {//codigo fonte referente ao pdf da parte 7.
+
+    @PrimaryGeneratedColumn()
     id: number;
 
-    @Column("varchar", { length: 20 })
+    @Column('text')
     nome: string;
 
-    @Column("varchar", { length: 8 })
+    @Column('text')
+    cor: string;
+
+    @Column('text')
     latitude: string;
 
-    @Column("varchar", { length: 8 })
+    @Column('text')
     longitude: string;
 }
 export default Local;
